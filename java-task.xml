@@ -1,11 +1,11 @@
-<project name="java-task" default="making folders">
+<project name="java-task" default="run">
 	<target name="making folders" >
 		<mkdir dir="src"/>
 		<mkdir dir="build/classes"/>
 		<mkdir dir="build/jar"/>
 	</target>
 	<target name="compile" depends="making folders">
-		<javac srcdir="src" distdir="build\classes" />
+		<javac srcdir="src" destdir="build\classes" />
 	</target>
 	<target name="jar" depends="compile">
 		<jar destfile="build\jar\HelloWorld.jar" basedir="build\classes">
