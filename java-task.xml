@@ -1,0 +1,8 @@
+<project name="java-task" default="cloning-repo">
+	<target name="making folders" >
+		<mkdir dir="src"/>
+		<mkdir dir="build/classes"/>
+		<mkdir dir="build/jar"/>
+	</target>
+	
+</project>
